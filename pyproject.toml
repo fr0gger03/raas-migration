@@ -1,0 +1,10 @@
+[project]
+name = "salt-raas-migration"
+version = "0.1.0"
+description = "CLI tool to migrate jobs and schedules between Salt RAAS / SaltStack Config servers"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "questionary>=2.0.0",
+    "requests>=2.28.0",
+]
