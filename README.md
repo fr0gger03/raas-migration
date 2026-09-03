@@ -10,11 +10,18 @@ A lightweight CLI utility to interactively migrate SaltStack Config / Salt RAAS 
 
 ### Setup
 
-1. Place `pyproject.toml` and your script (`migrate.py`) in the same folder.
+1. Place `pyproject.toml` and your script (`migration_script.py`) in the same folder.
 2. Install dependencies into a managed virtual environment:
 
 ```bash
 uv sync
+
+```
+
+#### Atlernatively - 
+Install with 
+```bash
+pip install -r requirements.txt
 
 ```
 
@@ -23,7 +30,15 @@ uv sync
 Run the script using `uv`:
 
 ```bash
-uv run migrate.py
+uv run migration_script.py
+
+```
+
+#### Alternatively - 
+run without uv as a normal python script
+
+```bash
+python3 migration_script.py
 
 ```
 
